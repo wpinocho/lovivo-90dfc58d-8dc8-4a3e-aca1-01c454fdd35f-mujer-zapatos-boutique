@@ -57,20 +57,20 @@ export const EcommerceTemplate = ({
               {!loadingCollections && hasCollections && (
                 <ScrollLink 
                   to="/#collections" 
-                  className="text-foreground/70 hover:text-foreground transition-colors"
+                  className="text-foreground/70 hover:text-primary font-medium transition-colors"
                 >
-                  Collections
+                  Colecciones
                 </ScrollLink>
               )}
               <ScrollLink 
                 to="/#products" 
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-foreground/70 hover:text-primary font-medium transition-colors"
               >
-                Products
+                Productos
               </ScrollLink>
               <Link 
                 to="/blog" 
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-foreground/70 hover:text-primary font-medium transition-colors"
               >
                 Blog
               </Link>
@@ -113,30 +113,30 @@ export const EcommerceTemplate = ({
   )
 
   const footer = (
-    <div className={`bg-black text-white py-12 ${footerClassName}`}>
+    <div className={`bg-gradient-to-br from-primary/10 via-background to-accent/10 py-16 border-t ${footerClassName}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
             <BrandLogoLeft />
-            <p className="mt-4 text-white/70">
-              Your trusted online store
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              Elegancia y estilo en cada paso. Tu boutique de calzado femenino de confianza.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Links</h3>
-            <div className="space-y-2">
+            <h3 className="font-semibold mb-4 text-foreground">Enlaces Rápidos</h3>
+            <div className="space-y-3">
               <Link 
                 to="/" 
-                className="block text-white/70 hover:text-white transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
-                Home
+                Inicio
               </Link>
               <Link 
                 to="/blog" 
-                className="block text-white/70 hover:text-white transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 Blog
               </Link>
@@ -145,13 +145,13 @@ export const EcommerceTemplate = ({
 
           {/* Social Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Follow Us</h3>
+            <h3 className="font-semibold mb-4 text-foreground">Síguenos</h3>
             <SocialLinks />
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/70">
-          <p>&copy; 2025 Your Store. All rights reserved.</p>
+        <div className="mt-12 pt-8 border-t text-center text-muted-foreground">
+          <p>&copy; 2025 Elegance Shoes. Todos los derechos reservados.</p>
         </div>
       </div>
     </div>
